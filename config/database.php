@@ -113,6 +113,18 @@ return [
             // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
         ],
 
+        'zkteco_sqlsrv' => [
+            'driver' => 'sqlsrv',
+            'host' => env('ZK_DB_HOST', '127.0.0.1'),
+            'port' => env('ZK_DB_PORT', '1433'),
+            'database' => env('ZK_DB_DATABASE', 'ZKTimeNet'), // Default name often varies
+            'username' => env('ZK_DB_USERNAME', 'sa'),
+            'password' => env('ZK_DB_PASSWORD', ''),
+            'trust_server_certificate' => true, // Often needed for local SQL Server
+            'charset' => 'utf8',
+            'prefix' => '',
+        ],
+
     ],
 
     /*
