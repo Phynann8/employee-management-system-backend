@@ -1,0 +1,23 @@
+[
+ {
+  "RuleID": "generic-api-key",
+  "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations.",
+  "StartLine": 14,
+  "EndLine": 14,
+  "StartColumn": 4,
+  "EndColumn": 45,
+  "Match": "key' =\u003e 'xXSAVghP7myRo5xqJAnMvQwBc7j8qBZI'",
+  "Secret": "xXSAVghP7myRo5xqJAnMvQwBc7j8qBZI",
+  "File": "documentation/other/crypt.md",
+  "SymlinkFile": "",
+  "Commit": "bfaf6950c691dc3b56cabac85d1b9cebe0483162",
+  "Link": "https://github.com/Phynann8/employee-management-system-backend/blob/bfaf6950c691dc3b56cabac85d1b9cebe0483162/documentation/other/crypt.md?plain=1#L14",
+  "Entropy": 4.6875,
+  "Author": "Taylor Otwell",
+  "Email": "taylorotwell@gmail.com",
+  "Date": "2011-07-16T00:25:29Z",
+  "Message": "added documentation to main repository.",
+  "Tags": [],
+  "Fingerprint": "bfaf6950c691dc3b56cabac85d1b9cebe0483162:documentation/other/crypt.md:generic-api-key:14"
+ }
+]

@@ -12,12 +12,28 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
+    protected $table = 'rms_users';
+    
     /**
      * The attributes that are mass assignable.
      *
      * @var array<int, string>
      */
-    protected $guarded = [];
+    protected $fillable = [
+        'first_name',
+        'last_name',
+        'user_name',
+        'email',
+        'password',
+        'user_type',
+        'active',
+        'branch_id',
+        'branch_list',
+        'is_system',
+        'schoolOption',
+        'degreeList',
+        'photo',
+    ];
 
     /**
      * The attributes that should be hidden for serialization.
@@ -38,14 +54,4 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
-
-    public function role()
-    {
-        return $this->belongsTo(Role::class);
-    }
-
-    public function employee()
-    {
-        return $this->hasOne(Employee::class);
-    }
 }
